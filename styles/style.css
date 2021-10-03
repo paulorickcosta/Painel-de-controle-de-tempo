@@ -64,6 +64,7 @@ body {
 
 img {
     width: 26%;
+    max-width: 130px;
     border:  3px solid white;
     border-radius: 50%;
 
@@ -248,5 +249,49 @@ p {
 
 }
 
+@media screen and (min-width: 570px) {
+
+    .container {
+        display:grid;
+        grid-template-columns: 48% 48%;
+    }
+
+    .menu-card {
+        grid-column: 1 / span 2;
+
+    }
+    .card-report {
+        gap: 3rem;
+    }
+
+    .regular-card {
+        
+    }
+    .property-card {
+
+    }
+    .row-2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
 
+.hours {
+    font-size: 3rem;
+}
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 77%;
+
+        grid-template-columns: 23% 23% 23% 23%;
+        gap: 3rem;
+    }
+
+    .menu-card {
+        grid-row: 1 / span 2;
+        grid-column: unset;
+    }
+
+}
