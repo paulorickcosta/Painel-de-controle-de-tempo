@@ -29,7 +29,9 @@ html {
 }
 
 body {
+    background-color: var(--very-dark-blue);
     font-family: 'Rubik', sans-serif;
+
 }
 
 .container {
@@ -252,7 +254,7 @@ p {
 @media screen and (min-width: 570px) {
 
     .container {
-        display:grid;
+        display: grid;
         grid-template-columns: 48% 48%;
     }
 
@@ -263,6 +265,7 @@ p {
     .card-report {
         gap: 3rem;
     }
+    
 
     .regular-card {
         
@@ -282,6 +285,14 @@ p {
 }
 
 @media screen and (min-width: 1440px) {
+    .body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    
     .container {
         width: 77%;
 
@@ -292,6 +303,55 @@ p {
     .menu-card {
         grid-row: 1 / span 2;
         grid-column: unset;
+        height: 100%;
+    }
+
+    .card-report {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 70%;
+        padding: 3.5rem 3rem;
+    }
+
+    img {
+        width: 8.4rem;
+    }
+
+    .report {
+        margin-top: 1.0rem;
+    }
+
+    .name {
+        font-size: 4rem;
+    }
+
+    .menu {
+        height: 30%;
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .regular-card {
+
+    }
+
+    .property-card {
+        margin-top: 4.5rem;
+        padding: 2.8rem;
+    }
+
+    .row-2 {
+
+    }
+
+    .hours {
+        font-size: 5.5rem;
+        padding-top: 1.9rem;
+    }
+
+    .description {
+        padding-top: 1.0rem;
     }
 
 }
